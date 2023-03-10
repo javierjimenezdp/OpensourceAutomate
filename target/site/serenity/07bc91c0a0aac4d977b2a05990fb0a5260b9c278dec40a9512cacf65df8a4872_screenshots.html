@@ -151,7 +151,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-03-2023 19:03</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-03-2023 08:30</span>
     <br style="clear:left"/>
 </div>
 
@@ -198,9 +198,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">De la lista de usuarios seleccione uno aleatoriamente y verifique en el buscador
+                                <span class="error-color">De la lista de usuarios seleccione uno aleatoriamente y verifique en el buscador
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -221,23 +221,55 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such element exception: Timed out after 2 seconds. Element not found</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>PageObject.SearchPageObject.sendKeysUserName(SearchPageObject.java:64)<br />Steps.SearchSteps.searchUserNameData(SearchSteps.java:36)<br />StepDefinitions.SearchStepDefinitions.searchUserName(SearchStepDefinitions.java:26)<br />✽.cargue los datos del usuario en el buscador(src/test/resources/Feature/5searchUser.feature:7)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource5342911314527202459.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="9ca3bad303e222c89b511124590e5fd5a12ba8b8c8964192ee6108036f4b9bad.png" title=" Example: {status=Disabled}" width="1296"/>
-                <img src="9ca3bad303e222c89b511124590e5fd5a12ba8b8c8964192ee6108036f4b9bad.png" title=" Given ingreso al home de la pagina HRM con usuario y contrase&ntilde;a" width="1296"/>
-                <img src="9ca3bad303e222c89b511124590e5fd5a12ba8b8c8964192ee6108036f4b9bad.png" title=" Given busco un usuario de la lista" width="1296"/>
-                <img src="a7dfb56f780e83fa69582bd7749ab1976aca6ade49871def41a4d850c8ef2ef2.png" title=" Given busco un usuario de la lista (completed)" width="1296"/>
-                <img src="a7dfb56f780e83fa69582bd7749ab1976aca6ade49871def41a4d850c8ef2ef2.png" title=" And extraigo el username, user_role, employee_name y el status" width="1296"/>
+                <img src="4dd348b67c853c6ab44f5932e87046493395f7c844ba10f21a2688ffb9c0b6fb.png" title=" Example: {status=Disabled}" width="1296"/>
+                <img src="4dd348b67c853c6ab44f5932e87046493395f7c844ba10f21a2688ffb9c0b6fb.png" title=" Given ingreso al home de la pagina HRM con usuario y contrase&ntilde;a" width="1296"/>
+                <img src="4dd348b67c853c6ab44f5932e87046493395f7c844ba10f21a2688ffb9c0b6fb.png" title=" Given busco un usuario de la lista" width="1296"/>
+                <img src="bcc08d8698edaf87028daf3a8ba979f519a7449611cf0a6a3346f1dc8053cbe0.png" title=" Given busco un usuario de la lista (completed)" width="1296"/>
+                <img src="bcc08d8698edaf87028daf3a8ba979f519a7449611cf0a6a3346f1dc8053cbe0.png" title=" And extraigo el username, user_role, employee_name y el status" width="1296"/>
                 <img src="82ee6cbf33ec0a23a846b8870b60073fb92389eabd4aa456e2bdcf199e25bc7e.png" title=" And extraigo el username, user_role, employee_name y el status (completed)" width="1296"/>
                 <img src="82ee6cbf33ec0a23a846b8870b60073fb92389eabd4aa456e2bdcf199e25bc7e.png" title=" And cargue los datos del usuario en el buscador" width="1296"/>
-                <img src="82ee6cbf33ec0a23a846b8870b60073fb92389eabd4aa456e2bdcf199e25bc7e.png" title=" And cargue los datos del usuario en el buscador (completed)" width="1296"/>
-                <img src="82ee6cbf33ec0a23a846b8870b60073fb92389eabd4aa456e2bdcf199e25bc7e.png" title=" And pueda observar los datos del usuario procedo a cambiar su Disabled y guardar cambios" width="1296"/>
-                <img src="2821352b517945d6e07ac8f3be07be478153c609386d22c4cc9819202f015583.png" title=" And pueda observar los datos del usuario procedo a cambiar su Disabled y guardar cambios (completed)" width="1296"/>
-                <img src="2821352b517945d6e07ac8f3be07be478153c609386d22c4cc9819202f015583.png" title=" When vuelva a realizar la busqueda del mismo usuario" width="1296"/>
-                <img src="2821352b517945d6e07ac8f3be07be478153c609386d22c4cc9819202f015583.png" title=" When vuelva a realizar la busqueda del mismo usuario (completed)" width="1296"/>
-                <img src="2821352b517945d6e07ac8f3be07be478153c609386d22c4cc9819202f015583.png" title=" Then debera cargar la info actualizada" width="1296"/>
-                <img src="9208a89fda584e61e9a7c2bbdf5fd38807b2f0ee83f9c32c4b891f6eb079b6f0.png" title=" Then debera cargar la info actualizada (completed)" width="1296"/>
-                <img src="9208a89fda584e61e9a7c2bbdf5fd38807b2f0ee83f9c32c4b891f6eb079b6f0.png" title=" Example: {status=Disabled} (completed): <span class='success-color'>SUCCESS</span>" width="1296"/>
+                <img src="5e8667c952e498a205bbc410b325e67afc491732d7ef6104ec23991b673f0521.png" title=" And cargue los datos del usuario en el buscador (completed): <span class='error-color'>ERROR</span>" width="1296"/>
             </div>
         </div>
 

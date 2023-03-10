@@ -56,9 +56,15 @@ public class SearchPageObject extends SearchWebBasePage{
         esperaElemnento(bottonAdmin, 10);
     }
     public boolean isVisibleHome() {
-    return false;
+        esperaElemnento(dashBoard,10);
+        return dashBoard.isDisplayed();
     }
     public void sendKeysUserName(String userName) {
+        esperaElemnento(clicInputUserName, 5);
+        clicInputUserName.click();
+        clicInputUserName.sendKeys(userName);
+        esperaElemnento(clicSearchUser, 3);
+        clicSearchUser.click();
     }
 
     public void searchNewStatus() {

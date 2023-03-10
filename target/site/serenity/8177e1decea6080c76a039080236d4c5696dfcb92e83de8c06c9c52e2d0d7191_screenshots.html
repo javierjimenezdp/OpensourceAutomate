@@ -151,7 +151,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-03-2023 16:41</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-03-2023 11:31</span>
     <br style="clear:left"/>
 </div>
 
@@ -198,9 +198,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Creacion exitosa de un nuevo usuario
+                                <span class="failing-color">Creacion exitosa de un nuevo usuario
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -216,32 +216,62 @@
 
     <div class="story-title">
         <h3>Scenario:</h3>
-        <div class="scenario">Given ingreso al home de la pagina HRM con usuario y contraseña<br>Given en el home de la pagina de Orange HRM y me dirijo a admin<br>And en el botón agregar una nueva cuenta doy clic<br>And ingreso el role &lt;Role&gt;<br>And registro el &lt;Status&gt;<br>And busco el nombre de un &lt;empleado&gt; aleatorio<br>And valido mi &lt;usuario&gt;, &lt;contrasena&gt; y &lt;confirmacion&gt;<br>When haya registrados mis datos, procedo a darle clic a salvar cambios<br>Then realizo la busqueda del nuevo usuario &lt;registrado&gt;</div>
+        <div class="scenario">Given ingreso al home de la pagina HRM con usuario y contraseña<br>Given en el home de la pagina de Orange HRM y me dirijo a admin<br>And en el botón agregar una nueva cuenta doy clic<br>And ingreso el role &lt;data&gt;<br>And registro el &lt;Status&gt;<br>And busco el nombre de un &lt;empleado&gt; aleatorio<br>And valido mi &lt;usuario&gt;, &lt;contrasena&gt; y &lt;confirmacion&gt;<br>When haya registrados mis datos, procedo a darle clic a salvar cambios<br>Then realizo la busqueda del nuevo usuario &lt;registrado&gt;</div>
     </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabledBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'javier-VivoBook-ASUSLaptop-X509JB-X509JB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.19.0-35-generic', java.version: '1.8.0_362'Driver info: driver.version: unknown</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>PageObject.NewPageObject.selectStatus(NewPageObject.java:64)<br />Steps.NewAccountSteps.inputStatus(NewAccountSteps.java:30)<br />StepDefinitions.NewAccountStepDefinitions.setStatus(NewAccountStepDefinitions.java:33)<br />✽.registro el <Status>(src/test/resources/Feature/2newAccount.feature:8)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource3701610175167523590.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="05d2d4496808c51df89df112d6a83602df73dac7a5acdffdd1036230530c19ee.png" title=" Example: {Role=Admin, Status=Enabled, empleado=o, usuario=javierplata115, contrasena=Javier123456., confirmacion=Javier123456., registrado=javierplata99}" width="1296"/>
-                <img src="05d2d4496808c51df89df112d6a83602df73dac7a5acdffdd1036230530c19ee.png" title=" Given ingreso al home de la pagina HRM con usuario y contrase&ntilde;a" width="1296"/>
-                <img src="05d2d4496808c51df89df112d6a83602df73dac7a5acdffdd1036230530c19ee.png" title=" Given en el home de la pagina de Orange HRM y me dirijo a admin" width="1296"/>
-                <img src="05d2d4496808c51df89df112d6a83602df73dac7a5acdffdd1036230530c19ee.png" title=" Given en el home de la pagina de Orange HRM y me dirijo a admin (completed)" width="1296"/>
-                <img src="05d2d4496808c51df89df112d6a83602df73dac7a5acdffdd1036230530c19ee.png" title=" And en el bot&oacute;n agregar una nueva cuenta doy clic" width="1296"/>
-                <img src="0136a0dfad8ef9b61b1925f2e7d1a469760e56c3c0a602abf9b268efbeaf440c.png" title=" And en el bot&oacute;n agregar una nueva cuenta doy clic (completed)" width="1296"/>
-                <img src="0136a0dfad8ef9b61b1925f2e7d1a469760e56c3c0a602abf9b268efbeaf440c.png" title=" And ingreso el role Admin" width="1296"/>
-                <img src="36cd7fdb965cc5d83a0a9608b8a75d6f615cedd92a2840024b4b1d856dea4112.png" title=" And ingreso el role Admin (completed)" width="1296"/>
-                <img src="36cd7fdb965cc5d83a0a9608b8a75d6f615cedd92a2840024b4b1d856dea4112.png" title=" And registro el Enabled" width="1296"/>
-                <img src="68d678a6bf50b6c3ff325ce196456bd4dd4e41ce478684623b6ba9e39edeb035.png" title=" And registro el Enabled (completed)" width="1296"/>
-                <img src="68d678a6bf50b6c3ff325ce196456bd4dd4e41ce478684623b6ba9e39edeb035.png" title=" And busco el nombre de un o aleatorio" width="1296"/>
-                <img src="69b89a627f15d3bbc19e30f31a1d6bd0fe42f6b5e61eb6f701d34aec6f2d259d.png" title=" And busco el nombre de un o aleatorio (completed)" width="1296"/>
-                <img src="69b89a627f15d3bbc19e30f31a1d6bd0fe42f6b5e61eb6f701d34aec6f2d259d.png" title=" And valido mi javierplata115, Javier123456. y Javier123456." width="1296"/>
-                <img src="87c93627d9c6895e118f855b8ac02d500b68d6d63c55163efc6aca10aa2765b2.png" title=" And valido mi javierplata115, Javier123456. y Javier123456. (completed)" width="1296"/>
-                <img src="87c93627d9c6895e118f855b8ac02d500b68d6d63c55163efc6aca10aa2765b2.png" title=" When haya registrados mis datos, procedo a darle clic a salvar cambios" width="1296"/>
-                <img src="3f1dc5744a2cd114cdc6c8a68a7157c88e868e6d0d393da1a2d4fe4d28585413.png" title=" When haya registrados mis datos, procedo a darle clic a salvar cambios (completed)" width="1296"/>
-                <img src="3f1dc5744a2cd114cdc6c8a68a7157c88e868e6d0d393da1a2d4fe4d28585413.png" title=" Then realizo la busqueda del nuevo usuario javierplata99" width="1296"/>
-                <img src="9329a99209413b083c4c4d20b429e0e8e3686386ea3147a4a514bd74a771200c.png" title=" Then realizo la busqueda del nuevo usuario javierplata99 (completed)" width="1296"/>
-                <img src="9329a99209413b083c4c4d20b429e0e8e3686386ea3147a4a514bd74a771200c.png" title=" Example: {Role=Admin, Status=Enabled, empleado=o, usuario=javierplata115, contrasena=Javier123456., confirmacion=Javier123456., registrado=javierplata99} (completed): <span class='success-color'>SUCCESS</span>" width="1296"/>
+                <img src="b93316de3d7aa5635f5bd444abbdf4212898a2940f6f202f78676cb6c0a4ea52.png" title=" Example: {data=2}" width="1296"/>
+                <img src="b93316de3d7aa5635f5bd444abbdf4212898a2940f6f202f78676cb6c0a4ea52.png" title=" Given ingreso al home de la pagina HRM con usuario y contrase&ntilde;a" width="1296"/>
+                <img src="b93316de3d7aa5635f5bd444abbdf4212898a2940f6f202f78676cb6c0a4ea52.png" title=" Given en el home de la pagina de Orange HRM y me dirijo a admin" width="1296"/>
+                <img src="b93316de3d7aa5635f5bd444abbdf4212898a2940f6f202f78676cb6c0a4ea52.png" title=" Given en el home de la pagina de Orange HRM y me dirijo a admin (completed)" width="1296"/>
+                <img src="b93316de3d7aa5635f5bd444abbdf4212898a2940f6f202f78676cb6c0a4ea52.png" title=" And en el bot&oacute;n agregar una nueva cuenta doy clic" width="1296"/>
+                <img src="c6ca2df63b364623bfc4971c5e8dc3903506c31921d2c701adf1e21adf340185.png" title=" And en el bot&oacute;n agregar una nueva cuenta doy clic (completed)" width="1296"/>
+                <img src="c6ca2df63b364623bfc4971c5e8dc3903506c31921d2c701adf1e21adf340185.png" title=" And ingreso el role 2" width="1296"/>
+                <img src="f39e146f96b505620104574ef0222ef88cc66773bfadf6faffd95b2100b88f33.png" title=" And ingreso el role 2 (completed)" width="1296"/>
+                <img src="f39e146f96b505620104574ef0222ef88cc66773bfadf6faffd95b2100b88f33.png" title=" And registro el &lt;Status&gt;" width="1296"/>
+                <img src="e83f06dd19b7a4948dafd9e020ed89361898f7f0cdf6407b0462538ce1d3e36e.png" title=" And registro el &lt;Status&gt; (completed): <span class='failing-color'>FAILURE</span>" width="1296"/>
             </div>
         </div>
 
